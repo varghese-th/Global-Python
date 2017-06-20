@@ -1,0 +1,413 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  
+  <title>Global Technologies Utd.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  .jumbotron {
+      background-color: #E5050F;
+      color: #fff;
+  }
+
+html {
+  overflow-y: scroll;
+}
+  body{ margin:0; padding:0; font:14px 'Open Sans',arial,sans-serif; line-height:22px; font-weight:400;}
+.container{ margin:0 auto; width:1030px;}
+.container-full{ margin:0 auto; width:100%;}
+
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}
+
+
+a{ text-decoration:none;}
+h1, h2, h3, h4, ul, li{ margin:0; padding:0; list-style-type:none;}
+
+.button{ font-size:14px; color:#fff; transition:all 0.2s; padding:8px 15px; display:inline-block; border-radius:2px; border:none; cursor:pointer; font:14px 'Open Sans',arial,sans-serif;}
+.blue{ background-color:#2362c0; color:#fff;}
+.yellow{ background-color:#fadd57; color:#222;}
+.button:hover{ background-color:#3f87f3; color:#fff; transition:all 0.2s;}
+
+
+#slider-wrapper{ position:relative;}
+.bxslider-inner{ position:relative;}
+.bxslider-inner img{ width:100%;}
+
+#slider-content{ position:absolute; left:0; top:0; z-index:5;}
+
+#header{ float:left; height:110px; width:100%;}
+#logo{ float:left; width:20%; margin-right:5%; padding:17px 0 20px 0; background:#fff; -webkit-box-shadow:0px 9px 11px -7px #000; -moz-box-shadow:0px 9px 11px -7px #000; box-shadow:0px 9px 11px -7px #000; text-align:center; transition:all 0.2s;}
+#menu{ float:right; width:75%;}
+#nav{ text-align:right; color:#fff; margin:20px 0;}
+#nav a, #nav span{ color:#fff; margin:0 3px; transition:all 0.2s;}
+#nav a:hover{ transition:all 0.2s; text-decoration:underline;}
+
+#main-nav{ background-color:#fc4234; -webkit-box-shadow:0px 9px 11px -7px #000; -moz-box-shadow:0px 9px 11px -7px #000; box-shadow:0px 9px 11px -7px #000; z-index:10;}
+#main-nav ul{}
+#main-nav ul li{ float:left; box-shadow:inset 0 0 1em #ec3021;}
+#main-nav ul li ul li{ }
+#main-nav ul li a{ color:#fff; font-weight:300; text-transform:uppercase; font-size:16px; float:right; display:block; padding:12px 10px; height:24px; transition:all 0.2s;}
+#main-nav ul li a:hover, #main-nav ul li .active{ background-color:#3b3b3b; color:#ddd; box-shadow:inset 0 0 1em #000; transition:all 0.2s;}
+#main-nav ul li .active:hover{ color:#fff;}
+
+
+
+
+
+
+
+
+
+/**
+ * 5.0 Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.site-navigation ul {
+  list-style: none;
+  margin: 0;
+}
+
+.site-navigation li {
+  
+}
+
+.site-navigation ul ul {
+  margin-left: 20px;
+}
+
+.site-navigation a {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #41a62a;
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+  color: #fff;
+  font-weight: 900;
+  transition:all 0.2s;
+}
+
+/* Primary Navigation */
+
+.primary-navigation {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  font-size: 14px;
+  padding-top: 24px;
+}
+
+.primary-navigation.toggled-on {
+  padding: 72px 0 36px;
+}
+
+.primary-navigation .nav-menu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: none;
+}
+
+.primary-navigation.toggled-on .nav-menu {
+  display: block;
+}
+
+.primary-navigation a {
+  padding: 7px 0;
+}
+
+/* Secondary Navigation */
+
+.secondary-navigation {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  margin: 48px 0;
+}
+
+.secondary-navigation a {
+  padding: 9px 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 0;
+  height: 48px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 48px;
+}
+
+.menu-toggle:before {
+  color: #fff;
+  content: "\f419";
+  margin-top: 16px;
+}
+
+
+
+.content-sidebar .widget .widget-title {
+  border-top: 5px solid #000;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0 0 18px;
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+
+.content-sidebar .widget .widget-title a {
+  color: #2b2b2b;
+}
+
+.content-sidebar .widget .widget-title a:hover {
+  color: #41a62a;
+}
+
+
+
+
+
+
+
+
+
+
+  /* Navigation */
+
+  .site-navigation li .current_page_item > a,
+  .site-navigation li .current_page_ancestor > a,
+  .site-navigation li .current-menu-item > a,
+  .site-navigation li .current-menu-ancestor > a {
+    color: #fff;
+  }
+
+  /* Primary Navigation */
+
+  .primary-navigation {
+    float: right;
+    font-size: 11px;
+    margin: 0 1px 0 -12px;
+    padding: 0;
+    text-transform: uppercase;
+    background-color:#fc4234;
+    -webkit-box-shadow:0px 9px 11px -7px #000; 
+    -moz-box-shadow:0px 9px 11px -7px #000;
+     box-shadow:0px 9px 11px -7px #000;
+     z-index:3; 
+     text-align:right;
+  }
+
+  .primary-navigation .menu-toggle {
+    display: none;
+    padding: 0;
+  }
+
+  .primary-navigation .nav-menu {
+    border-bottom: 0;
+    display: block;
+  }
+
+  .primary-navigation.toggled-on {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .primary-navigation li {
+    border: 0;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    box-shadow:inset 0 0 1em #ec3021;
+    text-align:left;
+  }
+
+  .primary-navigation a {
+    display: inline-block;
+    padding: 0 25px;
+    white-space: nowrap;
+    font-size:16px;
+  }
+
+
+  .primary-navigation ul ul {
+    background-color: #3b3b3b;
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 48px;
+    left: -999em;
+    z-index: 99999;
+  }
+
+  .primary-navigation li li {
+    border: 0;
+    display: block;
+    height: auto;
+    line-height: 1.0909090909;
+    box-shadow:inset 0 0 1em #000;
+  }
+
+  .primary-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+  }
+
+  .primary-navigation ul ul a {
+    padding: 18px 12px;
+    white-space: normal;
+    width: 176px;
+    
+  }
+
+  .primary-navigation li:hover > a, .primary-navigation li.current-menu-item, 
+  .primary-navigation li.focus > a {
+    background-color: #3b3b3b;
+    box-shadow:inset 0 0 1em #000 !important;
+    color: #fff;
+    transition:all 0.2s;
+  }
+  
+  .primary-navigation ul ul a:hover,
+  .primary-navigation ul ul li.focus > a {
+    background-color: #fc4234;
+    box-shadow: 0 0 1em #EC3021 inset;
+  }
+
+  .primary-navigation ul li:hover > ul,
+  .primary-navigation ul li.focus > ul {
+    left: auto;
+  }
+
+  .primary-navigation ul ul li:hover > ul,
+  .primary-navigation ul ul li.focus > ul {
+    left: 100%;
+  }
+
+  .primary-navigation .menu-item-has-children > a,
+  .primary-navigation .page_item_has_children > a {
+    padding-right: 26px;
+  }
+
+  .primary-navigation .menu-item-has-children > a:after,
+  .primary-navigation .page_item_has_children > a:after {
+    -webkit-font-smoothing: antialiased;
+    content: "\f502";
+    display: inline-block;
+    font: normal 8px/1 Genericons;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+    vertical-align: text-bottom;
+  }
+
+  .primary-navigation li .menu-item-has-children > a,
+  .primary-navigation li .page_item_has_children > a {
+    padding-right: 20px;
+    width: 168px;
+  }
+
+  .primary-navigation .menu-item-has-children li.menu-item-has-children > a:after,
+  .primary-navigation .menu-item-has-children li.page_item_has_children > a:after,
+  .primary-navigation .page_item_has_children li.menu-item-has-children > a:after,
+  .primary-navigation .page_item_has_children li.page_item_has_children > a:after {
+    content: "\f501";
+    right: 8px;
+    top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+    <div id="slider-content" class="container-full">
+    <section class="container">
+
+    <br />
+    <header id="header">
+    <div id="logo"><a href="/" title="Global Technologies Utd"><img src="" alt="Global Technologies Utd" border="0"/></a></div>
+
+
+    <div id="menu">
+    <br /> <br />
+
+    <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+     
+    <h1 class="menu-toggle">Primary Menu</h1>
+    
+    <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu">
+    	
+
+
+
+    	<li><a href="/">Home</a></li>
+      	<li><a href="/about">About</a></li>
+      	<li><a>Products</a>
+
+      	<ul class="sub-menu">
+      		<li><a href="/cctv">CCTV</a></li>
+      		<li><a href="/accessories">CCTV Accessories</a></li>
+      		<li><a href="/mobile">Mobile - Automotive dvr</a></li>
+      		<li><a href="/automation">Automation - home / gate</a></li>
+      
+      		<li ><a href="/alarm">Intrusion Alarm</a></li>
+      		<li><a href="/biometric">biometric solutions</a></li>
+      		<li><a href="/gps">gps - vehicle tracker</a></li>
+      		<li><a href="/stickers">Retro reflective stickers</a></li>
+      
+    	</ul></li>
+
+      	<li><a href="/enquiry">Enquiry</a></li>
+      	<li><a href="/contact">Contact</a></li>
+
+
+    </ul></div></nav>
+    </div>
+    </header>
+    </section>
+    </div>
+
+</div>
+{% block content %}
+{% endblock content %}
+</body>
+</html>

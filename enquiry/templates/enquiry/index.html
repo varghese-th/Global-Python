@@ -1,0 +1,104 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+<style>
+.mmm {
+  max-width:400px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  
+}
+
+body {
+    background-image: url("/media/images/d.jpg");
+}
+</style>
+
+
+
+         
+          <br>
+
+          <form method="POST" class="mmm">
+          {% csrf_token %}
+
+
+                <fieldset>
+
+                <!-- Form Name -->
+                    <legend></legend>
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="name">Name :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+                     
+                      <input id="id_{{ form.name.name}}" name="{{ form.name.name}}" type="text" placeholder="" class="form-control input-md" required=""  default="">
+                        
+                    </div>
+                    <br>
+                    <br>
+
+
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="name">Address : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+                     
+                       <textarea id="id_{{ form.address.name}}" name="{{ form.address.name}}" type="text" placeholder="" class="form-control input-md" required=""  default="" style="height: 100px"></textarea>
+                        
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="name">Contact No. :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+                     
+                      <input id="id_{{ form.contact.name}}" name="{{ form.contact.name}}" type="text" placeholder="" class="form-control input-md" required=""  default="">
+                        
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="name">Email :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+                     
+                      <input id="id_{{ form.email.name}}" name="{{ form.email.name}}" type="email" placeholder="" class="form-control input-md" required=""  default="">
+                        
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="name">Enquiry : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+                    
+                        <textarea id="id_{{ form.enquiry.name}}" name="{{ form.enquiry.name}}" type="text" placeholder="" class="form-control input-md" required=""  default="" style="height: 100px"></textarea>
+                        
+                    </div>
+                    <br>
+
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="submit"></label>
+                      <br>
+                      <div class="col-md-4">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="submit" name="submit" class="btn btn-primary">SUBMIT</button>
+
+
+                      </div>
+                    </div>
+
+
+              </fieldset>
+        </form>
+
+
+<br>
+<br>
+
+
+
+{% endblock content %}

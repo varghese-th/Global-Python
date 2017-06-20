@@ -11,10 +11,12 @@
   
 }
 
-body {
-    background-image: url("/media/images/www.jpg");
-}
 
+body {
+    background-image: url("/media/images/asa.jpg");
+    height: 100%;
+    width: 100%;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
@@ -49,17 +51,12 @@ body {
 }
 
 #contact h3 {
-  color: #F96;
+  color: red;
   display: block;
   font-size: 30px;
   font-weight: 400;
 }
 
-#contact h4 {
-  margin:5px 0 15px;
-  display:block;
-  font-size:13px;
-}
 
 fieldset {
   border: medium none !important;
@@ -94,7 +91,7 @@ fieldset {
   cursor:pointer;
   width:100%;
   border:none;
-  background:#0CF;
+  background:#E5050F;
   color:#FFF;
   margin:0 0 5px;
   padding:10px;
@@ -137,7 +134,7 @@ fieldset {
 <div class="mmm">  
   <form id="contact" action="" method="post">
   {% csrf_token %}
-    <h3>Quick Contact</h3>
+    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspQuick Contact</h3>
     <br>
     <fieldset>
       <input id="id_{{ form.name.name}}" name="{{ form.name.name}}" placeholder="Name" type="text" tabindex="1" required autofocus>
@@ -164,6 +161,42 @@ fieldset {
 </div>
 
 
+<section id="footer-wrapper" class="container-full">
+ <div class="container">
+<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a href="/">Home</a></li>
+<br>
+
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="/about">About</a></li>
+<br>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="/cctv">Products</a></li>
+<br>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="/enquiry">Enquiry</a></li>
+<br>
+<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/contact">Contact us</a></li>
+</ul></div></aside>
+
+
+
+
+<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Global Technologies Utd</h1>      <div class="textwidget">Vyttila | Kochi | Kerala - 682019</div>
+</aside>
+
+
+<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a> </a></li>
+<br>
+
+
+</ul></div></aside>
+
+
+
+
+
+
+<aside id="text-5" class="widget widget_text">      <div class="textwidget"><div id="phone">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#9742; +91 9349292944<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 9349897770<br>business@globaltechnologiesutd.com</div></div>
+</aside>  <div class="clear"></div>
+</div>
+</section>
 
 
 {% endblock content %}

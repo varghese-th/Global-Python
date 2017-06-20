@@ -1,6 +1,151 @@
+
+
 {% extends 'home/base.html' %}
 
 {% block content %}
+
+
+<style>
+	#map {
+	height: 400px;
+	width: 900px;
+	margin:0 auto;
+  	position:relative;
+
+    }
+
+
+.main-content{
+    width: 40%;
+    float: left;
+    
+}
+.aside{
+    width: 33%;
+    float: left;
+    font-size: 17px;    
+}
+
+.main-c{
+    width: 27%;
+    float: left;
+    
+}
+
+
+.qwert{
+    
+    font: 400 15px/1.2 Lato, sans-serif;
+    color: #000000;
+}
+
+
+.hhlo{
+  font-size: 15px
+}
+
+</style>
+
+
+
+
+<br>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 9.968542, lng: 76.316741};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQriBAMNDceta2JO_GL67k7KGPYPojlV4&callback=initMap">
+    </script>
+
+<br>
+
+
+
+<div class="qwerty"> <!-- for reasons -->
+  <div class="main-content">
+    <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGlobal Technologies Utd</h4>
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspManakkad |  University Rd <br>
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCusat Post | Kalamassery <br>
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKochi | Kerala | India - 682022 <br><br><br>
+
+  </div>
+
+
+  <div class="main-c">
+    <br>
+    Admin : Anchala Tower | SA Road | Vyttila
+    <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKochi | Kerala | India - 682019
+
+  </div>
+
+  <div class="aside">
+  <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#9742; +91 9349292944 <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 0484 3191977 <br>
+  <div class="hhlo">business@globaltechnologiesutd.com</div> 
+  </div>
+</div>
+
+
+
+<br>
+<br><br><br><br><br>
+
+
+
+<section id="footer-wrapper" class="container-full">
+ <div class="container">
+<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a href="/">Home</a></li>
+<br>
+
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="/about">About</a></li>
+<br>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="/cctv">Products</a></li>
+<br>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="/enquiry">Enquiry</a></li>
+<br>
+<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/contact">Contact us</a></li>
+</ul></div></aside>
+
+
+
+
+<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Global Technologies Utd</h1>      <div class="textwidget">Vyttila | Kochi | Kerala - 682019</div>
+</aside>
+
+
+<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a> </a></li>
+<br>
+
+
+</ul></div></aside>
+
+
+
+
+
+
+<aside id="text-5" class="widget widget_text">      <div class="textwidget"><div id="phone">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#9742; +91 9349292944<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 9349897770<br>business@globaltechnologiesutd.com</div></div>
+</aside>  <div class="clear"></div>
+</div>
+</section>
+
 
 
 

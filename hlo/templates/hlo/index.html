@@ -1,0 +1,49 @@
+<html>
+<body>
+
+
+
+
+
+
+{% for enquiry in list %} 
+<table class="table table-hover">
+  <thead>
+    <tr>
+        <th>Nameffff</th>
+        <th>{{enquiry.name}}</th>
+        <th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+    	<tr>
+        <td>Contact</td>
+        <td>{{enquiry.contact}}</td>
+      </tr>
+        <tr>
+        <td>Email</td>
+        <td>{{enquiry.email}}</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>{{enquiry.address}}</td>
+      </tr>
+      <tr>
+        <td>Enquiry</td>
+        <td>{{enquiry.enquiry}}</td>
+      </tr>  
+      </tr>
+
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>

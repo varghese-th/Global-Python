@@ -4,46 +4,54 @@
 
 
 
-<br>
-
-
-
-<section id="footer-wrapper" class="container-full">
- <div class="container">
-<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a href="/">Home</a></li>
-<br>
-
-<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="/about">About</a></li>
-<br>
-<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="/cctv">Products</a></li>
-<br>
-<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="/enquiry">Enquiry</a></li>
-<br>
-<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/contact">Contact us</a></li>
-</ul></div></aside>
 
 
 
 
-<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Global Technologies Utd</h1>      <div class="textwidget">dcdc<br />cxcc<br />cxcxcc<br />cxcxc</div>
-</aside>
-
-
-<aside id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-foot-menu2-container"><ul id="menu-foot-menu2" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-118"><a> </a></li>
-<br>
-
-
-</ul></div></aside>
+<style>
+.mySlides {display:none;}
+</style>
+<body>
 
 
 
+<div class="w3-content w3-section" style="max-width:1500px">
+  
+
+  <img class="mySlides" src="/media/images/a.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/b.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/c.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/d.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/e.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/f.jpg" style="width:100%" class="w3-image" height="400">
+  
+  <img class="mySlides" src="/media/images/h.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/i.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/j.jpg" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/k.png" style="width:100%" class="w3-image" height="400">
+  <img class="mySlides" src="/media/images/l.jpg" style="width:100%" class="w3-image" height="400">
+  
 
 
-
-<aside id="text-5" class="widget widget_text">      <div class="textwidget"><div id="phone">+91<br />+91<br />+91<br><br>tvkoluvan@gmail.com</div></div>
-</aside>  <div class="clear"></div>
 </div>
-</section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
 
 
 

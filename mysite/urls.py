@@ -18,7 +18,6 @@ urlpatterns = [
     url(r'^stickers/', include('stickers.urls')),
     url(r'^enquiry/', include('enquiry.urls')),
     url(r'^contact/', include('contact.urls')),
-     url(r'^hlo/', include('hlo.urls')),
    
 ]
 

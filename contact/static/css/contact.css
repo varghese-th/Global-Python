@@ -1,0 +1,46 @@
+  #map {
+    height: 400px;
+    width: 88%
+}
+
+.asa{
+  width: 8%;
+  float: left;
+}
+
+.asc{
+  width: 6%;
+  float: left;
+}
+.main-content{
+    width: 28%;
+    float: left;
+    
+}
+.aside{
+    width: 16%;
+    float: left;
+    font-size: 17px;    
+}
+
+.main-c{
+    width: 30%;
+    float: left;
+    
+}
+
+
+.qwert{
+    
+    font: 400 15px/1.2 Lato, sans-serif;
+    color: #000000;
+}
+
+.asb{
+
+}
+
+
+.hhlo{
+  font-size: 15px
+}

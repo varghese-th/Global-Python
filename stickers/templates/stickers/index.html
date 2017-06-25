@@ -2,8 +2,120 @@
 
 {% block content %}
 
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'css/cctv1.css' %}">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<style>
+	     .nav {
+  text-align: left;
+  width: 234px;
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  -webkit-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.nav > li {
+  width:210px;
+  background: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.nav > li:hover {
+  background: #E6E6E6;
+  color: #1B75C4;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 15px 15px 15px 15px;
+}
+
+.nav > li:nth-child(-n+3){
+  border-left: 4px solid #FFC50A;
+}
+
+.nav > li:nth-child(-n+3):hover{
+  border-left: 4px solid #cc9e08;
+}
+
+.nav > li:nth-child(n+4){
+  border-left: 4px solid #74BF44;
+}
+
+.nav > li:nth-child(n+4):hover{
+  border-left: 4px solid #5d9936;
+}
+
+.nav > li:nth-child(n+7) {
+  border-left: 4px solid #0097D1;
+}
+
+.nav > li:nth-child(n+7):hover {
+  border-left: 4px solid #0079a7;
+}
+
+.arrow {
+  float: right;
+  padding: 0px 10px
+}
+</style>
+
+<div class="asg">
+
+  <div class="ase">
+     &nbsp
+  </div>
+
+
+
+  <div class="asf">
+  <br>
+		<ul class="nav">
+
+		
+		<li><a href="/cctv">CCTV</a></li>
+		<li><a href="/accessories">CCTV Accessories</a></li>
+		<li><a href="/mobile">Mobile DVR</a></li>
+		<li><a href="/automation">Automation</a></li>
+		<li><a href="/alarm">Intrusion Alarm</a></li>
+		<li><a href="/biometric">Biometirc Solutions</a></li>
+		<li><a href="/gps">GPS</a></li>
+		<li><a href="/stickers">Reflective Stickers</a></li>
+		</ul>
+		<br>
+		<br>
+		<div class="ash">
+			Have doubts...?
+			<div class="asi"><a href="/enquiry" class="action-button shadow animate red">How</a></div>
+		</div>
+
+		<br><br><br>
+
+  </div>
+
+</div>
+
+
+
+
+
 
 
 
 
 {% endblock content %}
+
+
+
+
+

@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'biometric',
     'gps',
     'stickers',
+    
    
 ]
 

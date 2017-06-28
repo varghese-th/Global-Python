@@ -1,39 +1,87 @@
 
+
 {% extends 'home/base.html' %}
 
 {% block content %}
 
 
-
-
-
-
-
 {% load staticfiles %}
 
-<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}"> 
 
-<script type="text/javascript" src="{% static 'js/about.js' %}" ></script>
-    
 
-<div class="container-full scroller">
-<ul id="scroller">
-    <li><img src="/media/images/mx.jpg" class="w3-image" height="75" width="179" alt=""></li>
-    <li><img src="/media/images/3m.png" class="w3-image" height="75" width="130" alt=""></li>
-    <li><img src="/media/images/erd.png" class="w3-image" height="110" width="150" alt=""></li>
-    <li><img src="/media/images/time.jpg" class="w3-image" height="75" width="180" alt=""></li>
-    <li><img src="/media/images/one.png" class="w3-image" height="75" width="200" alt=""></li>
-    
-    <li><img src="/media/images/av.gif" class="w3-image" height="75" width="180" alt=""></li>
-    
-    <li><img src="/media/images/atss.png" class="w3-image" height="55" width="180" alt=""></li>
-    
-    
- </ul>
- <div class="clear"></div>
-</div>
+
 
 <br>
+
+  <div class="asb">
+    <div class="asa">
+      &nbsp
+    </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 9.968542, lng: 76.316741};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQriBAMNDceta2JO_GL67k7KGPYPojlV4&callback=initMap">
+    </script>
+  </div>
+<br>
+
+
+
+<div class="qwerty">
+
+  <div class="asa">
+     &nbsp
+  </div>
+  <div class="main-content">
+    <h4>Global Technologies Utd</h4>
+
+    Manakkad |  University Rd <br>
+
+    Cusat Post | Kalamassery <br>
+
+    Kochi | Kerala | India - 682022 <br><br><br>
+
+  </div>
+
+
+  <div class="main-c">
+    <br>
+    Admin : Anchala Tower | SA Road | Vyttila
+    <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKochi | Kerala | India - 682019
+
+  </div>
+  <div class="asc">
+    &nbsp
+  </div>
+  <div class="aside">
+  <br>
+  &#9742; +91 9349292944 <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0484 3191977 <br>
+  <div class="hhlo">business@globaltechnologiesutd.com</div> 
+  </div>
+</div>
+
+
+
+<br>
+<br><br><br><br><br>
+
+
 
 <section id="footer-wrapper" class="container-full">
  <div class="container">
@@ -74,5 +122,7 @@
 
 
 
-{% endblock content %}
 
+
+
+{% endblock content %}

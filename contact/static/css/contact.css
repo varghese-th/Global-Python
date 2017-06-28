@@ -1,4 +1,4 @@
-  #map {
+      #map {
     height: 400px;
     width: 88%
 }
@@ -18,9 +18,9 @@
     
 }
 .aside{
-    width: 16%;
+    
     float: left;
-    font-size: 17px;    
+    font-size: 13px;    
 }
 
 .main-c{
@@ -38,9 +38,4 @@
 
 .asb{
 
-}
-
-
-.hhlo{
-  font-size: 15px
 }

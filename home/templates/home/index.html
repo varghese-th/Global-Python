@@ -1,5 +1,1056 @@
-{% extends 'home/base.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Global Technologies Utd</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #E5050F;
+      color: #fff;
+      padding: 77px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #E5050F;
+      font-size: 50px;
+  }
+  .logo {
+      color: #E5050F;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #E5050F;
+  }
+  .carousel-indicators li {
+      border-color: #E5050F;
+  }
+  .carousel-indicators li.active {
+      background-color: #E5050F;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #E5050F; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #E5050F;
+      background-color: #fff !important;
+      color: #E5050F;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #E5050F !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #E5050F;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #E5050F;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #E5050F !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #E5050F;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div class="jumbotron">
 
 
-{% endblock content %}
+
+<style>
+    .jumbotron {
+      background-color: #E5050F;
+      color: #fff;
+      height: 100px;
+  }
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+#myBtn:hover {
+  background-color: red;
+}
+
+html {
+  overflow-y: scroll;
+}
+  body{ margin:0; padding:0; font:14px 'Open Sans',arial,sans-serif; line-height:22px; font-weight:400;}
+.container{ margin:0 auto; width:1030px;}
+.container-full{ margin:0 auto; width:100%;}
+
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}
+
+
+a{ text-decoration:none;}
+h1, h2, h3, h4, ul, li{ margin:0; padding:0; list-style-type:none;}
+
+.button{ font-size:14px; color:#fff; transition:all 0.2s; padding:8px 15px; display:inline-block; border-radius:2px; border:none; cursor:pointer; font:14px 'Open Sans',arial,sans-serif;}
+.blue{ background-color:#2362c0; color:#fff;}
+.yellow{ background-color:#fadd57; color:#222;}
+.button:hover{ background-color:#3f87f3; color:#fff; transition:all 0.2s;}
+
+
+#slider-wrapper{ position:relative;}
+.bxslider-inner{ position:relative;}
+.bxslider-inner img{ width:100%;}
+
+#slider-content{ position:absolute; left:0; top:0; z-index:5;}
+
+#header{ float:left; height:110px; width:100%;}
+#logo{ float:left; width:20%; margin-right:5%; padding:17px 0 20px 0; background:#fff; -webkit-box-shadow:0px 9px 11px -7px #000; -moz-box-shadow:0px 9px 11px -7px #000; box-shadow:0px 9px 11px -7px #000; text-align:center; transition:all 0.2s;}
+#menu{ float:right; width:75%;}
+#nav{ text-align:right; color:#fff; margin:20px 0;}
+#nav a, #nav span{ color:#fff; margin:0 3px; transition:all 0.2s;}
+#nav a:hover{ transition:all 0.2s; text-decoration:underline;}
+
+#main-nav{ background-color:#fc4234; -webkit-box-shadow:0px 9px 11px -7px #000; -moz-box-shadow:0px 9px 11px -7px #000; box-shadow:0px 9px 11px -7px #000; z-index:10;}
+#main-nav ul{}
+#main-nav ul li{ float:left; box-shadow:inset 0 0 1em #ec3021;}
+#main-nav ul li ul li{ }
+#main-nav ul li a{ color:#fff; font-weight:300; text-transform:uppercase; font-size:16px; float:right; display:block; padding:12px 10px; height:24px; transition:all 0.2s;}
+#main-nav ul li a:hover, #main-nav ul li .active{ background-color:#3b3b3b; color:#ddd; box-shadow:inset 0 0 1em #000; transition:all 0.2s;}
+#main-nav ul li .active:hover{ color:#fff;}
+
+
+
+
+
+
+
+
+
+/**
+ * 5.0 Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.site-navigation ul {
+  list-style: none;
+  margin: 0;
+}
+
+.site-navigation li {
+  
+}
+
+.site-navigation ul ul {
+  margin-left: 20px;
+}
+
+.site-navigation a {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #41a62a;
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+  color: #fff;
+  font-weight: 900;
+  transition:all 0.2s;
+}
+
+/* Primary Navigation */
+
+.primary-navigation {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  font-size: 14px;
+  padding-top: 24px;
+}
+
+.primary-navigation.toggled-on {
+  padding: 72px 0 36px;
+}
+
+.primary-navigation .nav-menu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: none;
+}
+
+.primary-navigation.toggled-on .nav-menu {
+  display: block;
+}
+
+.primary-navigation a {
+  padding: 7px 0;
+}
+
+/* Secondary Navigation */
+
+.secondary-navigation {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  margin: 48px 0;
+}
+
+.secondary-navigation a {
+  padding: 9px 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 0;
+  height: 48px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 48px;
+}
+
+.menu-toggle:before {
+  color: #fff;
+  content: "\f419";
+  margin-top: 16px;
+}
+
+
+
+.content-sidebar .widget .widget-title {
+  border-top: 5px solid #000;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0 0 18px;
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+
+.content-sidebar .widget .widget-title a {
+  color: #2b2b2b;
+}
+
+.content-sidebar .widget .widget-title a:hover {
+  color: #41a62a;
+}
+
+
+
+
+
+
+
+
+
+
+  /* Navigation */
+
+  .site-navigation li .current_page_item > a,
+  .site-navigation li .current_page_ancestor > a,
+  .site-navigation li .current-menu-item > a,
+  .site-navigation li .current-menu-ancestor > a {
+    color: #fff;
+  }
+
+  /* Primary Navigation */
+
+  .primary-navigation {
+    float: right;
+    font-size: 11px;
+    margin: 0 1px 0 -12px;
+    padding: 0;
+    text-transform: uppercase;
+    background-color:#fc4234;
+    -webkit-box-shadow:0px 9px 11px -7px #000; 
+    -moz-box-shadow:0px 9px 11px -7px #000;
+     box-shadow:0px 9px 11px -7px #000;
+     z-index:3; 
+     text-align:right;
+  }
+
+  .primary-navigation .menu-toggle {
+    display: none;
+    padding: 0;
+  }
+
+  .primary-navigation .nav-menu {
+    border-bottom: 0;
+    display: block;
+  }
+
+  .primary-navigation.toggled-on {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .primary-navigation li {
+    border: 0;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    box-shadow:inset 0 0 1em #ec3021;
+    text-align:left;
+  }
+
+  .primary-navigation a {
+    display: inline-block;
+    padding: 0 25px;
+    white-space: nowrap;
+    font-size:16px;
+  }
+
+
+  .primary-navigation ul ul {
+    background-color: #3b3b3b;
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 48px;
+    left: -999em;
+    z-index: 99999;
+  }
+
+  .primary-navigation li li {
+    border: 0;
+    display: block;
+    height: auto;
+    line-height: 1.0909090909;
+    box-shadow:inset 0 0 1em #000;
+  }
+
+  .primary-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+  }
+
+  .primary-navigation ul ul a {
+    padding: 18px 12px;
+    white-space: normal;
+    width: 176px;
+    
+  }
+
+  .primary-navigation li:hover > a, .primary-navigation li.current-menu-item, 
+  .primary-navigation li.focus > a {
+    background-color: #3b3b3b;
+    box-shadow:inset 0 0 1em #000 !important;
+    color: #fff;
+    transition:all 0.2s;
+  }
+  
+  .primary-navigation ul ul a:hover,
+  .primary-navigation ul ul li.focus > a {
+    background-color: #fc4234;
+    box-shadow: 0 0 1em #EC3021 inset;
+  }
+
+  .primary-navigation ul li:hover > ul,
+  .primary-navigation ul li.focus > ul {
+    left: auto;
+  }
+
+  .primary-navigation ul ul li:hover > ul,
+  .primary-navigation ul ul li.focus > ul {
+    left: 100%;
+  }
+
+  .primary-navigation .menu-item-has-children > a,
+  .primary-navigation .page_item_has_children > a {
+    padding-right: 26px;
+  }
+
+  .primary-navigation .menu-item-has-children > a:after,
+  .primary-navigation .page_item_has_children > a:after {
+    -webkit-font-smoothing: antialiased;
+    content: "\f502";
+    display: inline-block;
+    font: normal 8px/1 Genericons;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+    vertical-align: text-bottom;
+  }
+
+  .primary-navigation li .menu-item-has-children > a,
+  .primary-navigation li .page_item_has_children > a {
+    padding-right: 20px;
+    width: 168px;
+  }
+
+  .primary-navigation .menu-item-has-children li.menu-item-has-children > a:after,
+  .primary-navigation .menu-item-has-children li.page_item_has_children > a:after,
+  .primary-navigation .page_item_has_children li.menu-item-has-children > a:after,
+  .primary-navigation .page_item_has_children li.page_item_has_children > a:after {
+    content: "\f501";
+    right: 8px;
+    top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+/**
+ * 7.1 Widgets
+ * -----------------------------------------------------------------------------
+ */
+
+/* Primary Sidebar, Footer Sidebar */
+
+.widget {
+  font-size: 14px;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  -ms-hyphens:     auto;
+  hyphens:         auto;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.widget a {
+  color: #FC4234;
+}
+
+.widget a:hover {
+  color: #000;
+}
+
+.widget h1,
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h5,
+.widget h6 {
+  margin: 24px 0 12px;
+}
+
+.widget h1 {
+  font-size: 22px;
+  line-height: 1.0909090909;
+}
+
+.widget h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.widget h3 {
+  font-size: 18px;
+  line-height: 1.3333333333;
+}
+
+.widget h4 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.widget h5 {
+  font-size: 14px;
+  line-height: 1.7142857142;
+}
+
+.widget h6 {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.widget address {
+  margin-bottom: 18px;
+}
+
+.widget abbr[title] {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.widget mark,
+.widget ins {
+  color: #000;
+}
+
+.widget pre,
+.widget fieldset {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.widget code,
+.widget kbd,
+.widget tt,
+.widget var,
+.widget samp,
+.widget pre {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.widget blockquote {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.widget blockquote cite {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2857142857;
+}
+
+.widget dl,
+.widget dd {
+  margin-bottom: 18px;
+}
+
+.widget ul,
+.widget ol {
+  list-style: none;
+  margin: 0;
+}
+
+.widget li > ol,
+.widget li > ul {
+  margin-left: 10px;
+}
+
+.widget table,
+.widget th,
+.widget td {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.widget table {
+  margin-bottom: 18px;
+}
+
+.widget del {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.widget hr {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.widget p {
+  margin-bottom: 18px;
+}
+
+.widget input,
+.widget textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 1px 2px 2px 4px;
+}
+
+.widget input:focus,
+.widget textarea:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.widget button,
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+  background-color: #fb4234;
+  border: 0;
+  font-size: 12px;
+  padding: 8px 15px;
+}
+
+.widget input[type="button"]:hover,
+.widget input[type="button"]:focus,
+.widget input[type="reset"]:hover,
+.widget input[type="reset"]:focus,
+.widget input[type="submit"]:hover,
+.widget input[type="submit"]:focus {
+  background-color: #fb5934;
+}
+
+.widget input[type="button"]:active,
+.widget input[type="reset"]:active,
+.widget input[type="submit"]:active {
+  background-color: #fb5934;
+}
+
+.widget .wp-caption {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 18px;
+}
+
+.widget .widget-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.widget-title,
+.widget-title a {
+  color: #fff;
+}
+
+.widget-title a:hover {
+  color: #41a62a;
+}
+
+
+
+
+
+/**
+ * 8.0 Footer
+ * -----------------------------------------------------------------------------
+ */
+
+#supplementary {
+  padding: 0 10px;
+}
+
+.site-footer,
+.site-info,
+.site-info a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.site-footer {
+  background-color: #000;
+  font-size: 12px;
+  position: relative;
+  z-index: 3;
+}
+
+.footer-sidebar {
+  
+}
+
+.site-info {
+  padding: 15px 10px;
+}
+
+#supplementary + .site-info {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-info a:hover {
+  color: #41a62a;
+}
+
+
+
+
+#footer-wrapper .widget{ margin:0 !important; width:25%; float:left;}
+#footer-wrapper .sub-menu { border:none !important;}
+
+
+
+
+
+
+
+
+#footer-wrapper{ background-color:#E5050F; color:#bdc5d1; line-height:30px; padding:40px 0;}
+#footer-wrapper ul{}
+#footer-wrapper ul li{ float:left; width:100%; border:none;}
+#footer-wrapper ul li h2{ font-weight:400;}
+#footer-wrapper ul li a{ color:#bdc5d1 !important; display:block; text-transform:uppercase; font-size:12px; transition:all 0.2s;}
+#footer-wrapper ul li a:hover{ color:#fff !important; transition:all 0.2s;}
+
+#footer{ background-color:#0a0a0a; color:#3a3a3a; padding:15px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+    <div id="slider-content" class="container-full">
+    <section class="container">
+
+    <br />
+    <header id="header">
+    <div id="logo"><a href="/" title="Global Technologies Utd"><img src="" alt="Global Technologies Utd" border="0"/></a></div>
+
+
+    <div id="menu">
+    <br /> <br />
+
+    <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+     
+    <h1 class="menu-toggle">Primary Menu</h1>
+    
+    <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu">
+      
+
+
+
+      <li><a style="text-decoration: none;" href="/">Home</a></li>
+        
+        <li><a style="text-decoration: none;">Products</a>
+
+        <ul class="sub-menu">
+          <li><a style="text-decoration: none;" href="/cctv">CCTV</a></li>
+          <li><a style="text-decoration: none;" href="/accessories">CCTV Accessories</a></li>
+
+          <li><a style="text-decoration: none;" href="/automation">Automation - home / gate</a></li>
+      
+          <li ><a style="text-decoration: none;" href="/alarm">Intrusion Alarm</a></li>
+          <li><a style="text-decoration: none;" href="/biometric">biometric solutions</a></li>
+
+          <li><a style="text-decoration: none;" href="/stickers">Retro reflective stickers</a></li>
+      
+      </ul></li>
+
+        <li><a style="text-decoration: none;" href="/enquiry">Enquiry</a></li>
+        <li><a style="text-decoration: none;" href="/contact">Contact us</a></li>
+
+
+    </ul></div></nav>
+    </div>
+    </header>
+    </section>
+    </div>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg"><a href="/contact">Get in Touch</a></button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+
+ 
+  <br>
+  <br>
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<br>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Cochin , Kerala</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 9349292944</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> business@globaltechnologiesutd.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+ANY QUERIES...?
+<br>
+<a href="/enquiry">click here</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <style>
+        #map {
+    height: 400px;
+    width: 100%
+}
+</style>
+<br>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 9.968542, lng: 76.316741};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQriBAMNDceta2JO_GL67k7KGPYPojlV4&callback=initMap">
+    </script>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

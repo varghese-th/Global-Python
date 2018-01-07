@@ -11,11 +11,11 @@ def index_form(request):
 		if form.is_valid():
 			
 			form.save()
-			return HttpResponse('CORRECT')                      
+			return HttpResponseRedirect('/')                      
 			
 		else:
 
-			return HttpResponse('INCORRECT')
+			return HttpResponse('PLEASE FILL THE ENQUIRY FORM AGAIN')
     
 		
 	form = EnquiryCreationForm()
